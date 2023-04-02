@@ -33,7 +33,7 @@ local M = {
     },
     mappings = {
         n = {
-            ["<leader>ga"] = { "<cmd>Gitsigns<cr>", desc = "Gitsigns" }
+            ["<leader>ga"] = { "<cmd>Gitsigns<cr>", desc = "Gitsigns" },
         }
     }
 }
