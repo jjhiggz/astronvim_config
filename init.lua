@@ -20,7 +20,21 @@ local M = {
                 ensure_installed = { "tsserver" } -- automatically install lsp
             }
         },
-
+        {
+            "kylechui/nvim-surround",
+            -- tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+            lazy = false,
+            config = function()
+                require("nvim-surround").setup({
+                    -- Configuration here, or leave empty to use defaults
+                })
+            end,
+        },
+    },
+    mappings = {
+        n = {
+            ["<leader>ga"] = { "<cmd>Gitsigns<cr>", desc = "Gitsigns" }
+        }
     }
 }
 
